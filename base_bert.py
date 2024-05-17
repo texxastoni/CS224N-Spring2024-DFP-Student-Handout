@@ -7,7 +7,7 @@ from utils import *
 class BertPreTrainedModel(nn.Module):
   config_class = BertConfig
   base_model_prefix = "bert"
-  _keys_to_ignore_on_load_missing = [r"position_ids"]
+  _keys_to_ignore_on_lod_missing = [r"position_ids"]
   _keys_to_ignore_on_load_unexpected = None
 
   def __init__(self, config: PretrainedConfig, *inputs, **kwargs):
